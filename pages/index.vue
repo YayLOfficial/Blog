@@ -48,15 +48,9 @@
 
 	#posts {
 
-		display: grid;
+		display: flex;
 
-		grid-template-columns: repeat(3, 5fr);
-		grid-auto-rows: minmax(100px, auto);
-
-		column-gap: 3rem;
-		row-gap: 2rem;
-
-		width: fit-content;
+		width: 70%;
 
 		margin-left: auto;
 		margin-right: auto;

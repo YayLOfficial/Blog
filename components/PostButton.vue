@@ -1,8 +1,7 @@
 <template>
 	
 	<div id="post" @click="open()">
-		<h1>
-			{{title ? title : "Missing title"}}</h1>
+		<h2 id="post-title">{{title ? title : "Missing title"}}</h2>
 		<p id="post-desc">{{description ? description + "..." : "Summary unavailable"}}</p>
 		<div id="post-divider"></div>
 		<p id="post-continue">Press to read...</p>
@@ -38,7 +37,6 @@
 		border-width: 2px;
 		border-color: var(--post-border-color);
 		
-
 		width: 40ch;
 		height: 25vh;
 
@@ -50,11 +48,11 @@
 
 	}
 
-	#post > h1 {
+	#post-title {
 
 		color: rgba(255, 255, 255, 87%);
 
-		font-size: 2.5ch;
+		font-size: 2.2ch;
 		font-family: "Ubuntu";
 
 		margin-left: 1vw;
